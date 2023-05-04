@@ -1,0 +1,348 @@
+.contenedorConversor{
+    width: 100%;
+    height: auto;
+    background: #0692D0;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+.conversorTitulo  {
+  display: flex;
+  gap: 15px;
+}
+.conversorTexto p{
+    font-weight: 100;
+    font-size: 13px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+.conversorTexto h2{
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 37px;
+    color: #FFFFFF;
+}
+
+.botonLlamarTienda {
+    background: #E83C82;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    align-items: center;
+    text-align: center;
+    padding: 13px 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
+    color: #FFFFFF;
+    width: 280px;
+    margin-top: 30px;
+    display: block;
+}
+.contenedorAmbosBloquesOro{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+.contenedorBloqueSuperior{
+    width: 290px;
+    height: 166px;
+    background: linear-gradient(180deg, #1864A8 0%, rgba(24, 100, 168, 0) 100%);
+    border-radius: 8px;
+    padding: 10px;
+}
+.contenedorBloqueSuperiorPlata {
+    width: 290px;
+    height: 166px;
+    background: linear-gradient(180deg, #1864A8 0%, rgba(24, 100, 168, 0) 100%);
+    border-radius: 8px;
+    padding: 10px;
+}
+.botones{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 22px;
+}
+.button{
+    background: #FFFFFF;
+    padding: 6px 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.24);
+    border-radius: 2px;
+    border: none;
+    color: #0692D0;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 10px;
+    font-family: 'Montserrat', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+.botonActivo{
+    background: #E83C82;
+    color: #FFFFFF;
+}
+.contenedorPrecios{
+    display: flex;
+    justify-content: space-between;
+}
+.contenedorPreciosPlata {
+    display: flex;
+    justify-content: space-between;
+}
+.contenedorprecioDestacado{
+    display: flex;
+    justify-content: center;
+    width: 70%;
+}
+.contenedorprecioDestacadoPlata {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+}
+.precioDestacado{
+    width: 118px;
+    height: 76px;
+}
+.precioDestacadoPlata {
+    width: 118px;
+    height: 76px;
+}
+.masde{
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 5px;
+}
+.precio18k{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 33px;
+    color: #FFFFFF;
+    text-align: center;
+}
+.precio18k span{
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 33px;
+    color: #FFFFFF;
+}
+.kilates{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.contenedorOtrosPrecios{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.OtrosPrecios{
+    background: rgba(33, 62, 88, 0.2);
+    border-radius: 2px;
+    width: 85px;
+    height: 47px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.precio{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.OtrosPrecios p span{
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 16px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.preciok{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.contenedorCalculadora{
+    background: linear-gradient(180deg, #1864A8 0%, rgba(24, 100, 168, 0) 100%);
+    border-radius: 8px;
+    width: 290px;
+    height: 268px;
+    margin-top: 20px;
+    padding: 10px;
+}
+.contenedorCalculadora h2{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+.contenedorCalculadora h2 span{
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.contenedorSelect{
+    display: flex;
+}
+.Select, .input{
+    width: 50%;
+}
+.Select select{
+    width: 120px;
+    height: 40px;
+    background: #F5F5F5;
+    border-radius: 2px;
+    outline: none;
+    padding: 5px 5px;
+    color: #213E58;
+    font-weight: 400;
+    font-size: 14px;
+    cursor: pointer;
+}
+.Select select option{
+    color: #213E58;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 12px;
+}
+.Select p, .input p{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 11px;
+    color: #FFFFFF;
+    margin-bottom: 5px;
+}
+.input span{
+    font-size: 16px;
+    line-height: 11px;
+    color: #FFFFFF;
+    margin-left: 4px;
+}
+.input input{
+    width: 120px;
+    height: 40px;
+    background: #F5F5F5;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 12px;
+    color: #213E58;
+    padding: 0 5px;
+}
+.tituloInferior{
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 19px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 25px;
+}
+.precioFinal{
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 37px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 10px;
+}
+.precioFinal span{
+    font-size: 22px;
+}
+.promocion{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 35px;
+}
+.linea {
+    position: relative;
+    display: inline-block;
+}
+
+.linea:before {
+    content: '';
+    width: 100%;
+    z-index: 0;
+    border-bottom: 7px solid #FBBE00;
+    position: absolute;
+    display: block;
+    height: 5px;
+    transform: translateY(15%);
+}
+
+.linea:before {
+    left: 2px;
+    top: calc(50% - 1px);
+}
+.contenedorPrecioPlata{
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@media (min-width: 1061px) {
+.contenedorConversor {
+        width: 505px;
+        height: auto;
+        background: #0692D0;
+        border-radius: 8px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .conversorTitulo {
+        display: flex;
+        gap: 15px;
+    }
+
+    .conversorTexto p {
+        font-weight: 100;
+        font-size: 13px;
+        line-height: 16px;
+        color: #FFFFFF;
+    }
+
+    .conversorTexto h2 {
+        font-weight: 900;
+        font-size: 30px;
+        line-height: 37px;
+        color: #FFFFFF;
+    }
+    .botonLlamarTienda {
+        background: #E83C82;
+        box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 2px;
+        align-items: center;
+        text-align: center;
+        padding: 13px 15px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 14px;
+        color: #FFFFFF;
+        width: 280px;
+        margin-top: 30px;
+        display: block;
+    }
+}

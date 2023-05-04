@@ -7,26 +7,25 @@ const SectionCuatro = () => {
     <section className={styles.contenedorSectionCuatro}>
       <div className={styles.bloqueIzq}>
         <h2>
-          Cambia moneda extranjera en {""}
-          <span className={styles.linea}>Sevilla</span>
+          ¿Cuánto dinero recibo por vender plata en
+          {""}
+          <span className={styles.linea}>Tarragona?</span>
         </h2>
         <p>
-          En las oficinas de cambio de divisa quickgold en Sevilla puedes
-          cambiar dólares a euros en tan solo unos minutos. Recuerda llevar el
-          dinero que necesitas cambiar y, al instante, recibirás la moneda
-          extranjera que necesites en efectivo. Además, ofrecemos mejoras en la
-          tasa de cambio por cantidad, por lo tanto siempre estamos dispuesto a
-          escuchar tus necesidades para ofrecerte el mejor tipo de cambio de la
-          ciudad de Sevilla. Olvídate de cambiar divisa en el aeropuerto o en el
-          banco, en quickgold ofrecemos las mejores condiciones y ponemos a tu
-          disposición diferentes casas de cambio para estar siempre cerca de ti.
+          Consulta el precio por kilo de la plata en la parte superior y
+          acércate a nuestra tienda Quickgold en Tarragona para obtener tu
+          dinero en efectivo, al instante. Puedes vender la cubertería que ya no
+          utilizas, las piezas de plata que has heredado, monedas que antes te
+          gustaba coleccionar y hasta lingotes de plata, si tienes. Tasaremos
+          todas las piezas delante de ti para que, con total transparencia,
+          puedas conocer el importe que puedes recibir por ellas.
         </p>
       </div>
       <div className={styles.bloqueDer}>
         <img
           loading="lazy"
-          src="/casa-cambio-sevilla.webp"
-          alt="Cambiar Dólares a Euros Sevilla"
+          src="/compro-oro-tarragona.webp"
+          alt="Compro oro Tarragona"
           className={styles.Image}
           width={480}
           height={390}

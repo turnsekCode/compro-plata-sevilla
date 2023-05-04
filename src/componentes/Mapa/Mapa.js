@@ -17,18 +17,18 @@ import Map, {
 const Mapa = ({ markers }) => {
   const marcador = markers.arrayMarker;
   const [viewState, setViewState] = useState({
-    longitude: -5.982586298587076,
-    latitude: 37.38755663435926,
-    zoom: 11,
+    longitude: 1.2470205,
+    latitude: 41.1152124,
+    zoom: 13,
     cooperativeGestures: true,
   });
   const mapRef = useRef();
   const resetMap = () => {
     setShowPopup(false);
     mapRef.current?.flyTo({
-      center: [-5.982586298587076, 37.38755663435926],
+      center: [1.2470205, 41.1152124],
       duration: 2000,
-      zoom: 11,
+      zoom: 13,
     });
   };
   const [showPopup, setShowPopup] = useState(null);
@@ -65,7 +65,7 @@ const Mapa = ({ markers }) => {
     mapRef.current?.flyTo({
       center: { lng: marker.longitude, lat: marker.latitude },
       duration: 1500,
-      zoom: 11,
+      zoom: 13,
     });
     setActiveId(marker.id);
   };
@@ -75,7 +75,8 @@ const Mapa = ({ markers }) => {
       <div className={styles.contenedorbloqueIzq}>
         <div className={styles.bloqueIzq}>
           <h2>
-            Casas de cambio en <span className={styles.linea}>Sevilla</span>
+            Tiendas compro oro en{" "}
+            <span className={styles.linea}>Tarragona</span>
           </h2>
           <p>
             Tiendas Quickgold: <span>{numeroDeTiendas.id}</span>
@@ -180,6 +181,16 @@ const Mapa = ({ markers }) => {
                     >
                       {showInfo.direccion}
                     </a>
+
+                    <br></br>
+                    <a
+                      href={`tel:${showInfo.telefono}`}
+                      className={styles.telefono_popup}
+                      title="Teléfono"
+                    >
+                      <span>Llamar: </span>
+                      {showInfo.telefono}
+                    </a>
                     <br />
                     <a
                       title="Cómo llegar"
@@ -189,15 +200,6 @@ const Mapa = ({ markers }) => {
                       className={styles.boton_como_llegar}
                     >
                       Cómo llegar
-                    </a>
-                    <br></br>
-                    <a
-                      href={`tel:${showInfo.telefono}`}
-                      className={styles.telefono_popup}
-                      title="Teléfono"
-                    >
-                      <span>Llamar: </span>
-                      {showInfo.telefono}
                     </a>
                   </div>
                 </Popup>

@@ -10,25 +10,21 @@ import SectionCuatro from "@/componentes/Section_4/SectionCuatro";
 //import Mapa from "@/componentes/Mapa/Mapa";
 import Layout from "@/componentes/Layout/Layout";
 import { useInView } from "react-intersection-observer";
+import SeccionCincoPlata from "@/componentes/SeccionCincoPlata/SeccionCincoPlata.js";
 
 const DynamicMapa = dynamic(() =>
   import(/*componente del mapa script*/ "../componentes/Mapa/Mapa.js")
 );
 
-export default function Home({
-  markers,
-  menu_list,
-  dataReverseVenta,
-  dataReverse,
-}) {
+export default function Home({ markers, menu_list, ciudad }) {
   const { ref: myRef, inView, entry } = useInView();
   return (
     <>
       <Head>
-        <title>Casas de Cambio en Sevilla | Cambio de Divisas Sevilla</title>
+        <title> Compro Oro Tarragona | Vender Oro Tarragona</title>
         <meta
           name="description"
-          content="Casas de cambio en Sevilla. Cambia dólares a euros en nuestras oficinas de cambio quickgold. Cambio de moneda extranjera al momento y sin comisiones. "
+          content="Vende tus piezas de oro y plata en nuestro compro oro en Tarragona. Tasación a la vista y precios siempre actualizados."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.png" />
@@ -37,11 +33,9 @@ export default function Home({
         <div className={styles.main}>
           <Breadcrumbs />
           <Section_uno />
-          <SectionDos
-            dataReverse={dataReverse}
-            dataReverseVenta={dataReverseVenta}
-          />
+          <SectionDos ciudad={ciudad} />
           <SectionTres />
+          <SeccionCincoPlata ciudad={ciudad} />
           <SectionCuatro />
           <div
             id="contenedorMapa"
@@ -56,13 +50,14 @@ export default function Home({
     </>
   );
 }
-const idTienda = "sevilla";
+const idTienda = "tarragona";
+const idPaginaWp = "5565";
 //const idWp = "13848";
 export async function getStaticProps() {
-  /*const response = await fetch(
-    `https://quickgold.es/wp-json/wp/v2/pages/${idWp}`
+  const ciudad1 = await fetch(
+    `https://quickgold.es/wp-json/acf/v3/pages/${idPaginaWp}`
   );
-  const dataIdWp = await response.json();*/
+  const ciudad = await ciudad1.json();
 
   const marker = await fetch(`https://quickgold.es/markers${idTienda}.json`);
   const markers = await marker.json();
@@ -72,30 +67,12 @@ export async function getStaticProps() {
   );
   const menu_list = await menu.json();
 
-  const data = await fetch(
-    `https://quickgold.es/archivos-cache/Fixing${idTienda}.txt`
-  );
-  const datos = await data.json();
-  const dataReverse1 = [...datos?.result?.Tarifas?.Divisas_Compra].reverse();
-  const dataReverseVenta1 = [
-    ...datos?.result?.Tarifas?.Divisas_Venta,
-  ].reverse();
-  const dataReverse = dataReverse1.filter(
-    (currency) =>
-      currency.Name !== "RUB" &&
-      currency.Name !== "HRK" &&
-      currency.Name !== "DKK"
-  );
-  const dataReverseVenta = dataReverseVenta1.filter(
-    (currency) => currency.Name !== "HRK"
-  );
   // Pass data to the page via props
   return {
     props: {
       markers,
       menu_list,
-      dataReverse,
-      dataReverseVenta,
+      ciudad,
     },
     revalidate: 1,
   };

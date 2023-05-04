@@ -11,12 +11,14 @@ const Section_uno = () => {
     <section className={styles.contenedorSectionUno}>
       <div className={styles.bloqueIzq}>
         <h1>
-          Casas de cambio en <span className={styles.linea}>Sevilla</span>
+          Compro oro <span className={styles.linea}>Tarragona</span>
         </h1>
         <p>
-          En nuestras casas de cambio en Sevilla puedes cambiar más de 30
-          monedas extranjeras al momento y sin comisiones. ¿Necesitas cambiar
-          dólares por euros o cualquier otra moneda extranjera? Ven a Quickgold.
+          Vender oro en Tarragona es muy fácil y rápido en Quickgold. Te
+          esperamos en Plaça de Ponente número 7 (esquina con Avenida Prat de la
+          Riba), en Tarragona. Trae tus joyas de oro y las tasaremos, pesaremos,
+          revisamos sus quítales y en función de toda esa información, te
+          indicamos el importe que te vamos a pagar.
         </p>
         <div className={styles.botones}>
           <Link
@@ -39,16 +41,16 @@ const Section_uno = () => {
       <div className={styles.bloqueDer}>
         {width <= 610 ? (
           <img
-            src="/sevilla_mobil.webp"
-            alt="Casas de cambio Sevilla"
+            src="/tarragona_mobil.webp"
+            alt="Compro oro Tarragona"
             className={styles.madridMobil}
             width={290}
             height={220}
           />
         ) : (
           <img
-            src="/sevilla.webp"
-            alt="Casas de cambio Sevilla"
+            src="/tarragona.webp"
+            alt="Compro oro Tarragona"
             className={styles.vector}
             width={480}
             height={364}

@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import Comprar from "../ConversorDivisa/Comprar";
 import styles from "./section_2.module.css";
-import Vender from "../ConversorDivisa/Vender";
+import CalculadoraOro from "../ConversorPlata/CalculadoraOro";
 
-const SectionDos = ({ dataReverseVenta, dataReverse }) => {
+const SectionDos = ({ ciudad }) => {
   const [switched, setSwitched] = useState(null);
   return (
     <section className={styles.contendorSectionDos}>
@@ -13,44 +12,14 @@ const SectionDos = ({ dataReverseVenta, dataReverse }) => {
             <img src="/imagen_calc.png" alt="Logo Divisa" />
           </figure>
           <div className={styles.contenedorInfo}>
-            <h2>Cambio de Divisas Sevilla</h2>
+            <h2>Comprar oro en Tarragona</h2>
             <p>
-              Conoce el tipo de cambio en nuestras<br></br> casas de cambio de
-              moneda en Sevilla.
+              Utiliza nuestra calculadora para conocer<br></br> el precio de
+              vender oro en Tarragona.
             </p>
           </div>
-          <div className={styles.contenedorBotones}>
-            <button
-              onClick={() => {
-                setSwitched(false);
-              }}
-              className={
-                switched
-                  ? `${styles.botonComprar}`
-                  : `${styles.botonComprar} ${styles.botonActivo}`
-              }
-            >
-              QUIERO EUROS
-            </button>
-            <button
-              className={
-                switched
-                  ? `${styles.botonVender} ${styles.botonActivo}`
-                  : ` ${styles.botonVender}`
-              }
-              onClick={() => {
-                setSwitched(true);
-              }}
-            >
-              TENGO EUROS
-            </button>
-          </div>
         </div>
-        {switched ? (
-          <Vender dataReverseVenta={dataReverseVenta} />
-        ) : (
-          <Comprar dataReverse={dataReverse} />
-        )}
+        <CalculadoraOro ciudad={ciudad} />
       </div>
     </section>
   );
