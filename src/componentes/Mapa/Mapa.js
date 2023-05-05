@@ -17,8 +17,8 @@ import Map, {
 const Mapa = ({ markers }) => {
   const marcador = markers.arrayMarker;
   const [viewState, setViewState] = useState({
-    longitude: -2.9380098,
-    latitude: 43.2614442,
+    longitude: -5.982586298587076,
+    latitude: 37.38755663435926,
     zoom: 13,
     cooperativeGestures: true,
   });
@@ -26,7 +26,7 @@ const Mapa = ({ markers }) => {
   const resetMap = () => {
     setShowPopup(false);
     mapRef.current?.flyTo({
-      center: [-2.9380098, 43.2614442],
+      center: [-5.982586298587076, 37.38755663435926],
       duration: 2000,
       zoom: 13,
     });
