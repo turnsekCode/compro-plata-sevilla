@@ -75,7 +75,7 @@ const Mapa = ({ markers }) => {
       <div className={styles.contenedorbloqueIzq}>
         <div className={styles.bloqueIzq}>
           <h2>
-            Tiendas compro oro en <span className={styles.linea}>bilbao</span>
+            Tiendas compro oro en <span className={styles.linea}>Sevilla</span>
           </h2>
           <p>
             Tiendas Quickgold: <span>{numeroDeTiendas.id}</span>

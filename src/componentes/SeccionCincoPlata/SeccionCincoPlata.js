@@ -11,10 +11,10 @@ const SeccionCincoPlata = ({ ciudad }) => {
             <img src="/logoPlata.png" alt="Logo Plata" />
           </figure>
           <div className={styles.contenedorInfo}>
-            <h2>Compro plata Bilbao</h2>
+            <h2>Compro plata Sevilla</h2>
             <p>
               Información sobre el precio de la plata, <br></br>siempre
-              actualizado en Bilbao.
+              actualizado en Sevilla.
             </p>
           </div>
         </div>

@@ -11,13 +11,13 @@ const Section_uno = () => {
     <section className={styles.contenedorSectionUno}>
       <div className={styles.bloqueIzq}>
         <h1>
-          Compro oro <span className={styles.linea}>Bilbao</span>
+          Compro oro <span className={styles.linea}>Sevilla</span>
         </h1>
         <p>
-          Vender oro en Bilbao nunca había sido tan fácil. En Quickgold te
-          garantizamos el mejor servicio de toda la ciudad, con una tasación
-          detallada, a la vista y a un precio justo. Consulta el precio del oro
-          en Bilbao.
+          En Quickgold puedes vender oro en Sevilla en tan solo unos minutos y
+          obtener dinero en efectivo ¡para tus necesidades! En nuestra tienda
+          compro oro puedes ver el precio del oro en Sevilla siempre actualizado
+          para conocer al detalle cuánto te vamos a dar por tus joyas de oro.
         </p>
         <div className={styles.botones}>
           <Link
@@ -41,7 +41,7 @@ const Section_uno = () => {
         {width <= 610 ? (
           <img
             src="/bilbaoOro_mobil.webp"
-            alt="Compro oro bilbao"
+            alt="Compro oro sevilla"
             className={styles.madridMobil}
             width={290}
             height={220}
@@ -49,7 +49,7 @@ const Section_uno = () => {
         ) : (
           <img
             src="/bilbaoOro.webp"
-            alt="Compro oro bilbao"
+            alt="Compro oro sevilla"
             className={styles.vector}
             width={480}
             height={364}

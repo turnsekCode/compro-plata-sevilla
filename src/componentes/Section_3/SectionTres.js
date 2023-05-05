@@ -8,27 +8,26 @@ const SectionTres = () => {
         <div className={styles.bloqueIzq}>
           <h2>
             ¿Cómo puedo vender oro en
-            <span className={styles.linea}> Bilbao?</span>
+            <span className={styles.linea}> Sevilla?</span>
           </h2>
           <p>
             <span>
-              Ven a nuestra tienda compro en Bilbao y trae tus piezas de oro que
-              ya no quieres, o no utilizas. Nuestro equipo tasará tus joyas
-              delante de ti, y te indicará el precio del oro en Bilbao en ese
-              momento.{" "}
+              Actualmente tenemos 2 tiendas compro oro en Sevilla para ofrecerte
+              el mejor servicio para vender tus joyas de toda la ciudad.{" "}
             </span>
-            Tú decides si quieres vender o prefieres quedártelas. En el momento,
-            te llevas tu dinero en efectivo. Sin papeleos, sin esperas.
+            El proceso para vender oro es muy sencillo y cómodo. Realizamos una
+            tasación a la vista y pesamos todas las piezas. Según el kilataje de
+            cada una de ellas, te indicaremos el dinero en efectivo que te
+            entregamos.
           </p>
         </div>
         <div className={styles.bloqueDer}>
-          <h2>¿Cuál es el precio del oro en Bilbao?</h2>
+          <h2>¿Cuál es el precio del oro en Sevilla?</h2>
           <p>
-            Tanto en nuestra calculadora de precios online como en nuestra
-            tienda compro oro puedes ver el precio del oro siempre actualizado.
-            Llámanos sin compromiso para consultar el precio que puedes
-            conseguir por tus piezas de oro o si tienes cualquier duda del
-            procedimiento.
+            Conoce el precio del oro siempre actualizado en nuestras tiendas
+            Quickgold en Sevilla o en esta página web. En función del peso,
+            quilates de las piezas y características, obtendrás un importe u
+            otro, siempre en efectivo y al momento.
           </p>
         </div>
       </div>

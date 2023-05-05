@@ -7,25 +7,23 @@ const SectionCuatro = () => {
     <section className={styles.contenedorSectionCuatro}>
       <div className={styles.bloqueIzq}>
         <h2>
-          ¿Cuánto dinero me dais por vender plata en
-          {""}
-          <span className={styles.linea}>Bilbao?</span>
+          ¿Cuánto dinero recibo por vender plata en{" "}
+          <span className={styles.linea}>Sevilla?</span>
         </h2>
         <p>
-          En Quickgold Bilbao compramos todo tipo de piezas de plata. Ya sean
-          joyas, monedas, elementos de decoración, cuberterías o lingotes. Ven a
-          nuestra tienda y obtén dinero en efectivo al instante por ellas.
-          Garantizamos el mejor servicio y el mejor precio de la plata en Bilbao
-          siempre con una tasación a la vista y una comprobación específica para
-          este metal. Llámanos sin compromiso y fija tu precio. Mejor servicio y
-          precio por kilo garantizado
+          A diferencia del precio del oro, el precio de la plata se fija por
+          kilos. Llámanos para consultar cuál es el precio de la plata en
+          Sevilla en ese momento y si te interesa vender tus piezas de plata. El
+          proceso es muy sencillo: se pesan las piezas y se comprueban, te
+          indicamos el importe a pagar y, tras firmar un recibo, procedemos al
+          pago de la venta en efectivo.
         </p>
       </div>
       <div className={styles.bloqueDer}>
         <img
           loading="lazy"
-          src="/compro-oro-bilbao.webp"
-          alt="Compro oro bilbao"
+          src="/compro-oro-sevilla.webp"
+          alt="Compro oro sevilla"
           className={styles.Image}
           width={480}
           height={390}
