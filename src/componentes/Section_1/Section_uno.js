@@ -40,7 +40,7 @@ const Section_uno = () => {
       <div className={styles.bloqueDer}>
         {width <= 610 ? (
           <img
-            src="/bilbao_mobil.webp"
+            src="/bilbaoOro_mobil.webp"
             alt="Compro oro bilbao"
             className={styles.madridMobil}
             width={290}
@@ -48,7 +48,7 @@ const Section_uno = () => {
           />
         ) : (
           <img
-            src="/bilbao.webp"
+            src="/bilbaoOro.webp"
             alt="Compro oro bilbao"
             className={styles.vector}
             width={480}
