@@ -7,25 +7,25 @@ const SectionCuatro = () => {
     <section className={styles.contenedorSectionCuatro}>
       <div className={styles.bloqueIzq}>
         <h2>
-          ¿Cuánto dinero recibo por vender plata en
+          ¿Cuánto dinero me dais por vender plata en
           {""}
-          <span className={styles.linea}>Tarragona?</span>
+          <span className={styles.linea}>Bilbao?</span>
         </h2>
         <p>
-          Consulta el precio por kilo de la plata en la parte superior y
-          acércate a nuestra tienda Quickgold en Tarragona para obtener tu
-          dinero en efectivo, al instante. Puedes vender la cubertería que ya no
-          utilizas, las piezas de plata que has heredado, monedas que antes te
-          gustaba coleccionar y hasta lingotes de plata, si tienes. Tasaremos
-          todas las piezas delante de ti para que, con total transparencia,
-          puedas conocer el importe que puedes recibir por ellas.
+          En Quickgold Bilbao compramos todo tipo de piezas de plata. Ya sean
+          joyas, monedas, elementos de decoración, cuberterías o lingotes. Ven a
+          nuestra tienda y obtén dinero en efectivo al instante por ellas.
+          Garantizamos el mejor servicio y el mejor precio de la plata en Bilbao
+          siempre con una tasación a la vista y una comprobación específica para
+          este metal. Llámanos sin compromiso y fija tu precio. Mejor servicio y
+          precio por kilo garantizado
         </p>
       </div>
       <div className={styles.bloqueDer}>
         <img
           loading="lazy"
-          src="/compro-oro-tarragona.webp"
-          alt="Compro oro Tarragona"
+          src="/compro-oro-bilbao.webp"
+          alt="Compro oro bilbao"
           className={styles.Image}
           width={480}
           height={390}

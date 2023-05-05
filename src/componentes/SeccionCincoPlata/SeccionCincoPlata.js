@@ -8,13 +8,13 @@ const SeccionCincoPlata = ({ ciudad }) => {
       <div className={styles.contendorBloques}>
         <div className={styles.bloqueIzq}>
           <figure>
-            <img src="/imagen_calc.png" alt="Logo Divisa" />
+            <img src="/logoPlata.png" alt="Logo Plata" />
           </figure>
           <div className={styles.contenedorInfo}>
-            <h2>Compro plata Tarragona</h2>
+            <h2>Compro plata Bilbao</h2>
             <p>
               Información sobre el precio de la plata, <br></br>siempre
-              actualizado en Tarragona.
+              actualizado en Bilbao.
             </p>
           </div>
         </div>

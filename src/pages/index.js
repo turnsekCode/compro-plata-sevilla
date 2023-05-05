@@ -21,10 +21,10 @@ export default function Home({ markers, menu_list, ciudad }) {
   return (
     <>
       <Head>
-        <title> Compro Oro Tarragona | Vender Oro Tarragona</title>
+        <title> Compro Oro Bilbao | Vender Oro Bilbao</title>
         <meta
           name="description"
-          content="Vende tus piezas de oro y plata en nuestro compro oro en Tarragona. Tasación a la vista y precios siempre actualizados."
+          content="Vende tus piezas de oro y plata en nuestro compro oro en Bilbao. Tasación a la vista y precios siempre actualizados."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.png" />
@@ -50,8 +50,8 @@ export default function Home({ markers, menu_list, ciudad }) {
     </>
   );
 }
-const idTienda = "tarragona";
-const idPaginaWp = "5565";
+const idTienda = "bilbao";
+const idPaginaWp = "5412";
 //const idWp = "13848";
 export async function getStaticProps() {
   const ciudad1 = await fetch(

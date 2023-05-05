@@ -9,13 +9,13 @@ const SectionDos = ({ ciudad }) => {
       <div className={styles.contendorBloques}>
         <div className={styles.bloqueIzq}>
           <figure>
-            <img src="/imagen_calc.png" alt="Logo Divisa" />
+            <img src="/logoOro.png" alt="Logo Plata" />
           </figure>
           <div className={styles.contenedorInfo}>
-            <h2>Comprar oro en Tarragona</h2>
+            <h2>Comprar oro en Bilbao</h2>
             <p>
               Utiliza nuestra calculadora para conocer<br></br> el precio de
-              vender oro en Tarragona.
+              vender oro en Bilbao.
             </p>
           </div>
         </div>

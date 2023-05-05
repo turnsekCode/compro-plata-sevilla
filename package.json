@@ -1,8 +1,8 @@
 {
-  "name": "compro-oro-tarragona",
+  "name": "compro-oro-bilbao",
   "version": "0.1.0",
   "private": true,
-  "home": "quickgold.es/compro-oro-tarragona",
+  "home": "quickgold.es/compro-oro-bilbao",
   "scripts": {
     "dev": "node server.js",
     "build": "next build",

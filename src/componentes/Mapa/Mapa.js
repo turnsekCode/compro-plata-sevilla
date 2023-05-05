@@ -17,8 +17,8 @@ import Map, {
 const Mapa = ({ markers }) => {
   const marcador = markers.arrayMarker;
   const [viewState, setViewState] = useState({
-    longitude: 1.2470205,
-    latitude: 41.1152124,
+    longitude: -2.9380098,
+    latitude: 43.2614442,
     zoom: 13,
     cooperativeGestures: true,
   });
@@ -26,7 +26,7 @@ const Mapa = ({ markers }) => {
   const resetMap = () => {
     setShowPopup(false);
     mapRef.current?.flyTo({
-      center: [1.2470205, 41.1152124],
+      center: [-2.9380098, 43.2614442],
       duration: 2000,
       zoom: 13,
     });
@@ -75,8 +75,7 @@ const Mapa = ({ markers }) => {
       <div className={styles.contenedorbloqueIzq}>
         <div className={styles.bloqueIzq}>
           <h2>
-            Tiendas compro oro en{" "}
-            <span className={styles.linea}>Tarragona</span>
+            Tiendas compro oro en <span className={styles.linea}>bilbao</span>
           </h2>
           <p>
             Tiendas Quickgold: <span>{numeroDeTiendas.id}</span>

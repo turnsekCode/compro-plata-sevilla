@@ -1,147 +1,146 @@
 .contendorSectionDos {
-    padding: 0 20px;
+  padding: 0 20px;
 }
 
 .contendorBloques {
-    justify-content: center;
-    background-color: #0692D0;
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-top: 55px;
-    padding-bottom: 10px;
+  justify-content: center;
+  background-color: #0692d0;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 55px;
+  padding-bottom: 10px;
 }
 
 .bloqueIzq,
 .bloqueDer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 25px 0 25px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 0 25px 0;
 }
 
 .bloqueIzq figure img {
-    width: 80px;
-    height: 80px;
+  width: 80px;
+  height: 80px;
 }
 
 .contenedorInfo h2 {
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 40px;
-    text-align: center;
-    color: #FFFFFF;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+  text-align: center;
+  color: #ffffff;
 }
 
 .contenedorInfo p {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    text-align: center;
-    color: #FFFFFF;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #ffffff;
 }
 
 .contenedorBotones {
-    margin-top: 30px;
-    display: flex;
-    gap: 10px;
-
+  margin-top: 30px;
+  display: flex;
+  gap: 10px;
 }
 
 .botonComprar,
 .botonVender {
-    background: #1864A8;
+  background: #1864a8;
+  align-items: center;
+  padding: 13px 10px;
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  border: none;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 14px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.botonActivo {
+  background: #e83c82;
+}
+
+@media (min-width: 1191px) {
+  .contendorBloques {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+    display: flex;
+    gap: 60px;
+    background: url(https://quickgold.es/degradadobilbaoizq.png) no-repeat;
+    background-blend-mode: multiply;
+    background-position: right;
+    background-color: #0692d0;
+    flex-direction: row-reverse;
+    background-size: 50%;
+  }
+
+  .contendorSectionDos {
+    padding: 0;
+  }
+
+  .bloqueIzq,
+  .bloqueDer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .bloqueIzq figure img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .contenedorInfo h2 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .contenedorInfo p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .contenedorBotones {
+    margin-top: 30px;
+    display: flex;
+    gap: 10px;
+  }
+
+  .botonComprar,
+  .botonVender {
+    background: #1864a8;
     align-items: center;
     padding: 13px 10px;
     box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
     border-radius: 2px;
     border: none;
-    color: #FFFFFF;
+    color: #ffffff;
     font-weight: 700;
     font-size: 13px;
     line-height: 14px;
     text-align: center;
     cursor: pointer;
-}
+  }
 
-.botonActivo {
-    background: #E83C82;
-}
-
-@media (min-width: 1191px) {
-    .contendorBloques {
-        width: 100%;
-        height: auto;
-        border-radius: 8px;
-        margin-top: 10px;
-        display: flex;
-        gap: 60px;
-        background: url(https://quickgold.es/degradadoTarragonaIzq.png) no-repeat;
-        background-blend-mode: multiply;
-        background-position: right;
-        background-color: #0692D0;
-        flex-direction: row-reverse;
-        background-size: 50%;
-    }
-
-    .contendorSectionDos {
-        padding: 0;
-    }
-
-    .bloqueIzq,
-    .bloqueDer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 0;
-    }
-
-    .bloqueIzq figure img {
-        width: 80px;
-        height: 80px;
-    }
-
-    .contenedorInfo h2 {
-        font-weight: 700;
-        font-size: 30px;
-        line-height: 40px;
-        text-align: center;
-        color: #FFFFFF;
-    }
-
-    .contenedorInfo p {
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 17px;
-        text-align: center;
-        color: #FFFFFF;
-    }
-
-    .contenedorBotones {
-        margin-top: 30px;
-        display: flex;
-        gap: 10px;
-    }
-
-    .botonComprar,
-    .botonVender {
-        background: #1864A8;
-        align-items: center;
-        padding: 13px 10px;
-        box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
-        border-radius: 2px;
-        border: none;
-        color: #FFFFFF;
-        font-weight: 700;
-        font-size: 13px;
-        line-height: 14px;
-        text-align: center;
-        cursor: pointer;
-    }
-
-    .botonActivo {
-        background: #E83C82;
-    }
+  .botonActivo {
+    background: #e83c82;
+  }
 }

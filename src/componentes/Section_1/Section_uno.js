@@ -11,14 +11,13 @@ const Section_uno = () => {
     <section className={styles.contenedorSectionUno}>
       <div className={styles.bloqueIzq}>
         <h1>
-          Compro oro <span className={styles.linea}>Tarragona</span>
+          Compro oro <span className={styles.linea}>Bilbao</span>
         </h1>
         <p>
-          Vender oro en Tarragona es muy fácil y rápido en Quickgold. Te
-          esperamos en Plaça de Ponente número 7 (esquina con Avenida Prat de la
-          Riba), en Tarragona. Trae tus joyas de oro y las tasaremos, pesaremos,
-          revisamos sus quítales y en función de toda esa información, te
-          indicamos el importe que te vamos a pagar.
+          Vender oro en Bilbao nunca había sido tan fácil. En Quickgold te
+          garantizamos el mejor servicio de toda la ciudad, con una tasación
+          detallada, a la vista y a un precio justo. Consulta el precio del oro
+          en Bilbao.
         </p>
         <div className={styles.botones}>
           <Link
@@ -41,16 +40,16 @@ const Section_uno = () => {
       <div className={styles.bloqueDer}>
         {width <= 610 ? (
           <img
-            src="/tarragona_mobil.webp"
-            alt="Compro oro Tarragona"
+            src="/bilbao_mobil.webp"
+            alt="Compro oro bilbao"
             className={styles.madridMobil}
             width={290}
             height={220}
           />
         ) : (
           <img
-            src="/tarragona.webp"
-            alt="Compro oro Tarragona"
+            src="/bilbao.webp"
+            alt="Compro oro bilbao"
             className={styles.vector}
             width={480}
             height={364}
