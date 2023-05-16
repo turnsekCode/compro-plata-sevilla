@@ -37,7 +37,7 @@ const BloquePrecioPlata = ({ ciudad }) => {
                 <p className={styles.precio18k}>Cargando</p>
               ) : (
                 <p className={styles.precio18k}>
-                  {precio999Suma}
+                  {precio999Suma.toFixed(2)}
                   <span>€/kg</span>
                 </p>
               )}
@@ -50,7 +50,7 @@ const BloquePrecioPlata = ({ ciudad }) => {
                 <p className={styles.precio}>Cargando</p>
               ) : (
                 <p className={styles.precio}>
-                  {precio925Suma}
+                  {precio925Suma.toFixed(2)}
                   <span>€/kg</span>
                 </p>
               )}
