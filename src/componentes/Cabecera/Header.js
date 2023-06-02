@@ -19,7 +19,6 @@ const Header = ({ menu_list }) => {
           <a
             href="https://quickgold.es/"
             title="Logo Quickgold"
-            target="_blank"
             rel="noopener noreferrer"
           >
             <img

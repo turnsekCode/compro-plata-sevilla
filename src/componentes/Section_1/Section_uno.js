@@ -11,13 +11,13 @@ const Section_uno = () => {
     <section className={styles.contenedorSectionUno}>
       <div className={styles.bloqueIzq}>
         <h1>
-          Compro oro <span className={styles.linea}>Sevilla</span>
+          Compro Plata <span className={styles.linea}>Madrid</span>
         </h1>
         <p>
-          En Quickgold puedes vender oro en Sevilla en tan solo unos minutos y
-          obtener dinero en efectivo ¡para tus necesidades! En nuestra tienda
-          compro oro puedes ver el precio del oro en Sevilla siempre actualizado
-          para conocer al detalle cuánto te vamos a dar por tus joyas de oro.
+          Vender plata en Madrid nunca había sido tan fácil. En Quickgold te
+          garantizamos el mejor servicio de toda la ciudad, con una tasación
+          detallada, a la vista y a un precio justo. Consulta el precio de la
+          plata en Madrid.
         </p>
         <div className={styles.botones}>
           <Link
@@ -40,16 +40,16 @@ const Section_uno = () => {
       <div className={styles.bloqueDer}>
         {width <= 610 ? (
           <img
-            src="/bilbaoOro_mobil.webp"
-            alt="Compro oro sevilla"
+            src="/plata_mobil.webp"
+            alt="Compro plata madrid"
             className={styles.madridMobil}
             width={290}
             height={220}
           />
         ) : (
           <img
-            src="/bilbaoOro.webp"
-            alt="Compro oro sevilla"
+            src="/plata.webp"
+            alt="Compro plata madrid"
             className={styles.vector}
             width={480}
             height={364}

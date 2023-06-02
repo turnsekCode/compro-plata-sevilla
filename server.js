@@ -6,8 +6,8 @@ const dev = process.env.NODE_ENV !== "production";
 const hostname =
   process.env.NODE_ENV !== "production"
     ? "localhost"
-    : "quickgold.es/compro-oro-sevilla";
-const port = process.env.PORT || 3017;
+    : "quickgold.es/compro-oro-madrid";
+const port = process.env.PORT || 3021;
 // when using middleware `hostname` and `port` must be provided below
 const app = next({ dev, hostname, port });
 const handle = app.getRequestHandler();

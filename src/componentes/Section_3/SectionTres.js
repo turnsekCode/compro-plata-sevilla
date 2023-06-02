@@ -7,27 +7,28 @@ const SectionTres = () => {
       <div className={styles.contenedorContenidoUno}>
         <div className={styles.bloqueIzq}>
           <h2>
-            ¿Cómo puedo vender oro en
-            <span className={styles.linea}> Sevilla?</span>
+            ¿Cómo puedo vender plata en
+            <span className={styles.linea}> Madrid?</span>
           </h2>
           <p>
             <span>
-              Actualmente tenemos 2 tiendas compro oro en Sevilla para ofrecerte
-              el mejor servicio para vender tus joyas de toda la ciudad.{" "}
+              Ven a nuestra tienda compro plata en Madrid y trae tus piezas de
+              plata que ya no quieres, o no utilizas. Nuestro equipo tasará tus
+              joyas delante de ti, y te indicará el precio de la plata en Madrid
+              en ese momento.{" "}
             </span>
-            El proceso para vender oro es muy sencillo y cómodo. Realizamos una
-            tasación a la vista y pesamos todas las piezas. Según el kilataje de
-            cada una de ellas, te indicaremos el dinero en efectivo que te
-            entregamos.
+            Tú decides si quieres vender o prefieres quedártelas. En el momento,
+            te llevas tu dinero en efectivo. Sin papeleos, sin esperas.
           </p>
         </div>
         <div className={styles.bloqueDer}>
-          <h2>¿Cuál es el precio del oro en Sevilla?</h2>
+          <h2>¿Cuál es el precio de la plata en Madrid?</h2>
           <p>
-            Conoce el precio del oro siempre actualizado en nuestras tiendas
-            Quickgold en Sevilla o en esta página web. En función del peso,
-            quilates de las piezas y características, obtendrás un importe u
-            otro, siempre en efectivo y al momento.
+            Tanto en nuestra calculadora de precios online como en nuestra
+            tienda compro plata puedes ver el precio de la plata siempre
+            actualizado. Llámanos sin compromiso para consultar el precio que
+            puedes conseguir por tus piezas de plata o si tienes cualquier duda
+            del procedimiento.
           </p>
         </div>
       </div>

@@ -17,18 +17,21 @@ import Map, {
 const Mapa = ({ markers }) => {
   const marcador = markers.arrayMarker;
   const [viewState, setViewState] = useState({
-    longitude: -5.982586298587076,
-    latitude: 37.38755663435926,
-    zoom: 13,
+    longitude: markers?.markerInicial[0].longitude,
+    latitude: markers?.markerInicial[0].latitude,
+    zoom: markers?.markerInicial[0].zoom,
     cooperativeGestures: true,
   });
   const mapRef = useRef();
   const resetMap = () => {
     setShowPopup(false);
     mapRef.current?.flyTo({
-      center: [-5.982586298587076, 37.38755663435926],
+      center: [
+        markers.markerInicial[0].longitude,
+        markers.markerInicial[0].latitude,
+      ],
       duration: 2000,
-      zoom: 13,
+      zoom: markers?.markerInicial[0].zoom,
     });
   };
   const [showPopup, setShowPopup] = useState(null);
@@ -75,7 +78,7 @@ const Mapa = ({ markers }) => {
       <div className={styles.contenedorbloqueIzq}>
         <div className={styles.bloqueIzq}>
           <h2>
-            Tiendas compro oro en <span className={styles.linea}>Sevilla</span>
+            Tiendas compro plata en <span className={styles.linea}>Madrid</span>
           </h2>
           <p>
             Tiendas Quickgold: <span>{numeroDeTiendas.id}</span>
@@ -100,7 +103,7 @@ const Mapa = ({ markers }) => {
                   toggleTab();
                   onSelectMarker(marker);
                 }}
-                to="contenedorMapa"
+                to="contenedorMapa2"
                 smooth={true}
                 offset={-110}
                 spy={true}
@@ -112,7 +115,11 @@ const Mapa = ({ markers }) => {
                 <p>{marker.direccion}</p>
                 <p>Teléfono: {marker.telefono}</p>
                 <Link
-                  to="contenedorMapa"
+                  onClick={() => {
+                    toggleTab();
+                    onSelectMarker(marker);
+                  }}
+                  to="contenedorMapa2"
                   smooth={true}
                   offset={-110}
                   spy={true}
@@ -127,7 +134,7 @@ const Mapa = ({ markers }) => {
         </div>
         {/*<BloqueTiendas />*/}
       </div>
-      <div className={styles.bloqueDer} id="contenedorMapa">
+      <div className={styles.bloqueDer} id="contenedorMapa2">
         <Map
           onStyleLoad
           ref={mapRef}

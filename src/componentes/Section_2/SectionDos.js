@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styles from "./section_2.module.css";
-import CalculadoraOro from "../ConversorPlata/CalculadoraOro";
+import BloquePrecioPlata from "../ConversorPlata/BloquePrecioPlata";
 
 const SectionDos = ({ ciudad }) => {
   const [switched, setSwitched] = useState(null);
@@ -12,14 +12,14 @@ const SectionDos = ({ ciudad }) => {
             <img src="/logoOro.png" alt="Logo Plata" />
           </figure>
           <div className={styles.contenedorInfo}>
-            <h2>Comprar oro en Sevilla</h2>
+            <h2>Comprar Plata en Madrid</h2>
             <p>
               Utiliza nuestra calculadora para conocer<br></br> el precio de
-              vender oro en Sevilla.
+              vender plata en Madrid.
             </p>
           </div>
         </div>
-        <CalculadoraOro ciudad={ciudad} />
+        <BloquePrecioPlata ciudad={ciudad} />
       </div>
     </section>
   );

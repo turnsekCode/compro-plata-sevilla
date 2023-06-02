@@ -21,10 +21,11 @@ export default function Home({ markers, menu_list, ciudad }) {
   return (
     <>
       <Head>
-        <title> Compro Oro Sevilla | Vender Oro Sevilla</title>
+        <title>Compro Plata Madrid | Vender Plata Madrid</title>
         <meta
           name="description"
-          content="Vende tus piezas de oro y plata en nuestro compro oro en Sevilla. Tasación a la vista y precios siempre actualizados."
+          content="Vende tus piezas de plata y oro en nuestro compro plata en Madrid. Tasación a la
+vista y precios siempre actualizados."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.png" />
@@ -35,7 +36,6 @@ export default function Home({ markers, menu_list, ciudad }) {
           <Section_uno />
           <SectionDos ciudad={ciudad} />
           <SectionTres />
-          <SeccionCincoPlata ciudad={ciudad} />
           <SectionCuatro />
           <div
             id="contenedorMapa"
@@ -50,8 +50,8 @@ export default function Home({ markers, menu_list, ciudad }) {
     </>
   );
 }
-const idTienda = "sevilla";
-const idPaginaWp = "5949";
+const idTienda = "madrid";
+const idPaginaWp = "468";
 //const idWp = "13848";
 export async function getStaticProps() {
   const ciudad1 = await fetch(
