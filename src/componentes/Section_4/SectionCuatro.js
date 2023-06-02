@@ -23,8 +23,8 @@ const SectionCuatro = () => {
       <div className={styles.bloqueDer}>
         <img
           loading="lazy"
-          src="/compro-oro-madrid.webp"
-          alt="Compro oro madrid"
+          src="/casa-cambio-madrid.webp"
+          alt="Compro plata madrid"
           className={styles.Image}
           width={480}
           height={390}

@@ -1995,8 +1995,8 @@ const SectionCuatro = ()=>{
                 className: (_sectionCuatro_module_css__WEBPACK_IMPORTED_MODULE_2___default().bloqueDer),
                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
                     loading: "lazy",
-                    src: "/compro-oro-madrid.webp",
-                    alt: "Compro oro madrid",
+                    src: "/casa-cambio-madrid.webp",
+                    alt: "Compro plata madrid",
                     className: (_sectionCuatro_module_css__WEBPACK_IMPORTED_MODULE_2___default().Image),
                     width: 480,
                     height: 390
