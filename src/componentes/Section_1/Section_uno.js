@@ -11,13 +11,13 @@ const Section_uno = () => {
     <section className={styles.contenedorSectionUno}>
       <div className={styles.bloqueIzq}>
         <h1>
-          Compro Plata <span className={styles.linea}>Madrid</span>
+          Compro Plata <span className={styles.linea}>Sevilla</span>
         </h1>
         <p>
-          Vender plata en Madrid nunca había sido tan fácil. En Quickgold te
+          Vender plata en Sevilla nunca había sido tan fácil. En Quickgold te
           garantizamos el mejor servicio de toda la ciudad, con una tasación
           detallada, a la vista y a un precio justo. Consulta el precio de la
-          plata en Madrid.
+          plata en Sevilla.
         </p>
         <div className={styles.botones}>
           <Link
@@ -40,16 +40,16 @@ const Section_uno = () => {
       <div className={styles.bloqueDer}>
         {width <= 610 ? (
           <img
-            src="/plata_mobil.webp"
-            alt="Compro plata madrid"
-            className={styles.madridMobil}
+            src="/plata-mobil.webp"
+            alt="Compro plata Sevilla"
+            className={styles.sevillaMobil}
             width={290}
             height={220}
           />
         ) : (
           <img
             src="/plata.webp"
-            alt="Compro plata madrid"
+            alt="Compro plata Sevilla"
             className={styles.vector}
             width={480}
             height={364}

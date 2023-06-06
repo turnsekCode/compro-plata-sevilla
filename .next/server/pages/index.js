@@ -188,7 +188,7 @@ module.exports = {
 	"linea": "section_uno_linea__sE_iP",
 	"bloqueIzq": "section_uno_bloqueIzq__PPsV_",
 	"bloqueDer": "section_uno_bloqueDer__tgJlu",
-	"madridMobil": "section_uno_madridMobil__6tO4y",
+	"sevillaMobil": "section_uno_sevillaMobil__m6E7D",
 	"botones": "section_uno_botones__62UCW"
 };
 
@@ -298,355 +298,14 @@ const Breadcrumbs = ()=>{
                 ]
             }),
             /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                href: "https://quickgold.es/compro-oro-madrid/",
-                title: "Ir a casa compro plata madrid",
-                children: "Compro Plata Madrid"
+                href: "https://quickgold.es/compro-oro-sevilla/",
+                title: "Ir a casa compro plata Sevilla",
+                children: "Compro Plata Sevilla"
             })
         ]
     });
 };
 /* harmony default export */ const Breadcrumbs_Breadcrumbs = (Breadcrumbs);
-
-
-/***/ }),
-
-/***/ 2950:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6689);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _conversor_module_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(7741);
-/* harmony import */ var _conversor_module_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_conversor_module_css__WEBPACK_IMPORTED_MODULE_2__);
-
-
-
-const CalculadoraOro = ({ ciudad  })=>{
-    const nombreCiudad = ciudad?.acf?.ciudad_oro;
-    const [data, setData] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)([]);
-    const [loading, setLoading] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(null);
-    (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(()=>{
-        fetch(`https://quickgold.es/archivos-cache/Fixing${nombreCiudad}.txt`, {
-            cache: "no-cache"
-        }).then((response)=>response.json()).then((response)=>{
-            setData(response);
-            setLoading(true);
-        });
-    }, []);
-    const [valorInput, setValorInput] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)("0.00");
-    const [valorSelect, setValorSelect] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)("0.00");
-    const [masDe, setMasDe] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(true);
-    const precio999 = data?.result?.Tarifas?.Plata[3].Productos[0].Precio.toFixed(2);
-    const precio925 = data?.result?.Tarifas?.Plata[2].Productos[0].Precio.toFixed(2);
-    const precio800 = data?.result?.Tarifas?.Plata[0].Productos[0].Precio.toFixed(2);
-    const masDePlata = ciudad?.acf?.para_mas_de_plata;
-    const PrecioMasPlata = ciudad?.acf?.precio_mas_de_plata;
-    const precio999Suma = (parseFloat(precio999) + parseFloat(PrecioMasPlata)).toFixed(2);
-    const precio925Suma = (parseFloat(precio925) + parseFloat(PrecioMasPlata)).toFixed(2);
-    const precio800Suma = (parseFloat(precio800) + parseFloat(PrecioMasPlata)).toFixed(2);
-    const valorSelectSuma = (parseFloat(valorSelect) + parseFloat(PrecioMasPlata)).toFixed(2);
-    const valorSelectNormal = parseFloat(valorSelect).toFixed(2);
-    return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-        className: (_conversor_module_css__WEBPACK_IMPORTED_MODULE_2___default().contenedorAmbosBloquesOro),
-        children: [
-            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                className: (_conversor_module_css__WEBPACK_IMPORTED_MODULE_2___default().contenedorBloqueSuperior),
-                children: [
-                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                        className: (_conversor_module_css__WEBPACK_IMPORTED_MODULE_2___default().botones),
-                        children: [
-                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("button", {
-                                onClick: ()=>{
-                                    setMasDe(true);
-                                },
-                                className: masDe ? `${(_conversor_module_css__WEBPACK_IMPORTED_MODULE_2___default().button)} ${(_conversor_module_css__WEBPACK_IMPORTED_MODULE_2___default().botonActivo)}` : `${(_conversor_module_css__WEBPACK_IMPORTED_MODULE_2___default().button)} `,
-                                children: [
-                                    "M\xe1s de ",
-                                    masDePlata,
-                                    "kg"
-                                ]
-                            }),
-                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("button", {
-                                onClick: ()=>{
-                                    setMasDe(false);
-                                },
-                                className: masDe ? `${(_conversor_module_css__WEBPACK_IMPORTED_MODULE_2___default().button)} ` : `${(_conversor_module_css__WEBPACK_IMPORTED_MODULE_2___default().button)} ${(_conversor_module_css__WEBPACK_IMPORTED_MODULE_2___default().botonActivo)}`,
-                                children: [
-                                    "Menos de ",
-                                    masDePlata,
-                                    "kg"
-                                ]
-                            })
-                        ]
-                    }),
-                    masDe ? /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                        className: (_conversor_module_css__WEBPACK_IMPORTED_MODULE_2___default().contenedorPrecios),
-                        children: [
-                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                className: (_conversor_module_css__WEBPACK_IMPORTED_MODULE_2___default().contenedorprecioDestacado),
-                                children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                    className: (_conversor_module_css__WEBPACK_IMPORTED_MODULE_2___default().precioDestacado),
-                                    children: [
-                                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", {
-                                            className: (_conversor_module_css__WEBPACK_IMPORTED_MODULE_2___default().masde),
-                                            children: [
-                                                "M\xe1s de ",
-                                                masDePlata,
-                                                "kg"
-                                            ]
-                                        }),
-                                        !loading ? /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                            className: (_conversor_module_css__WEBPACK_IMPORTED_MODULE_2___default().precio18k),
-                                            children: "Cargando"
-                                        }) : /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", {
-                                            className: (_conversor_module_css__WEBPACK_IMPORTED_MODULE_2___default().precio18k),
-                                            children: [
-                                                precio999Suma,
-                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
-                                                    children: "€/kg"
-                                                })
-                                            ]
-                                        }),
-                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                            className: (_conversor_module_css__WEBPACK_IMPORTED_MODULE_2___default().kilates),
-                                            children: "999"
-                                        })
-                                    ]
-                                })
-                            }),
-                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                className: (_conversor_module_css__WEBPACK_IMPORTED_MODULE_2___default().contenedorOtrosPrecios),
-                                children: [
-                                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                        className: (_conversor_module_css__WEBPACK_IMPORTED_MODULE_2___default().OtrosPrecios),
-                                        children: [
-                                            !loading ? /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                                className: (_conversor_module_css__WEBPACK_IMPORTED_MODULE_2___default().precio),
-                                                children: "Cargando"
-                                            }) : /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", {
-                                                className: (_conversor_module_css__WEBPACK_IMPORTED_MODULE_2___default().precio),
-                                                children: [
-                                                    precio925Suma,
-                                                    " ",
-                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
-                                                        children: "€/kg"
-                                                    })
-                                                ]
-                                            }),
-                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                                className: (_conversor_module_css__WEBPACK_IMPORTED_MODULE_2___default().preciok),
-                                                children: "925"
-                                            })
-                                        ]
-                                    }),
-                                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                        className: (_conversor_module_css__WEBPACK_IMPORTED_MODULE_2___default().OtrosPrecios),
-                                        children: [
-                                            !loading ? /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                                className: (_conversor_module_css__WEBPACK_IMPORTED_MODULE_2___default().precio),
-                                                children: "Cargando"
-                                            }) : /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", {
-                                                className: (_conversor_module_css__WEBPACK_IMPORTED_MODULE_2___default().precio),
-                                                children: [
-                                                    precio800Suma,
-                                                    " ",
-                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
-                                                        children: "€/kg"
-                                                    })
-                                                ]
-                                            }),
-                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                                className: (_conversor_module_css__WEBPACK_IMPORTED_MODULE_2___default().preciok),
-                                                children: "800"
-                                            })
-                                        ]
-                                    })
-                                ]
-                            })
-                        ]
-                    }) : /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                        className: (_conversor_module_css__WEBPACK_IMPORTED_MODULE_2___default().contenedorPrecios),
-                        children: [
-                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                className: (_conversor_module_css__WEBPACK_IMPORTED_MODULE_2___default().contenedorprecioDestacado),
-                                children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                    className: (_conversor_module_css__WEBPACK_IMPORTED_MODULE_2___default().precioDestacado),
-                                    children: [
-                                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", {
-                                            className: (_conversor_module_css__WEBPACK_IMPORTED_MODULE_2___default().masde),
-                                            children: [
-                                                "Menos de ",
-                                                masDePlata,
-                                                "kg"
-                                            ]
-                                        }),
-                                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", {
-                                            className: (_conversor_module_css__WEBPACK_IMPORTED_MODULE_2___default().precio18k),
-                                            children: [
-                                                precio999,
-                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
-                                                    children: "€/kg"
-                                                })
-                                            ]
-                                        }),
-                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                            className: (_conversor_module_css__WEBPACK_IMPORTED_MODULE_2___default().kilates),
-                                            children: "999"
-                                        })
-                                    ]
-                                })
-                            }),
-                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                className: (_conversor_module_css__WEBPACK_IMPORTED_MODULE_2___default().contenedorOtrosPrecios),
-                                children: [
-                                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                        className: (_conversor_module_css__WEBPACK_IMPORTED_MODULE_2___default().OtrosPrecios),
-                                        children: [
-                                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", {
-                                                className: (_conversor_module_css__WEBPACK_IMPORTED_MODULE_2___default().precio),
-                                                children: [
-                                                    precio925,
-                                                    " ",
-                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
-                                                        children: "€/kg"
-                                                    })
-                                                ]
-                                            }),
-                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                                className: (_conversor_module_css__WEBPACK_IMPORTED_MODULE_2___default().preciok),
-                                                children: "925"
-                                            })
-                                        ]
-                                    }),
-                                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                        className: (_conversor_module_css__WEBPACK_IMPORTED_MODULE_2___default().OtrosPrecios),
-                                        children: [
-                                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", {
-                                                className: (_conversor_module_css__WEBPACK_IMPORTED_MODULE_2___default().precio),
-                                                children: [
-                                                    precio800,
-                                                    " ",
-                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
-                                                        children: "€/kg"
-                                                    })
-                                                ]
-                                            }),
-                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                                className: (_conversor_module_css__WEBPACK_IMPORTED_MODULE_2___default().preciok),
-                                                children: "800"
-                                            })
-                                        ]
-                                    })
-                                ]
-                            })
-                        ]
-                    })
-                ]
-            }),
-            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                className: (_conversor_module_css__WEBPACK_IMPORTED_MODULE_2___default().contenedorCalculadora),
-                children: [
-                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("h2", {
-                        children: [
-                            "\xbfCu\xe1nto ",
-                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
-                                children: "te vamos a dar"
-                            }),
-                            " por tus joyas?"
-                        ]
-                    }),
-                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                        className: (_conversor_module_css__WEBPACK_IMPORTED_MODULE_2___default().contenedorSelect),
-                        children: [
-                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                className: (_conversor_module_css__WEBPACK_IMPORTED_MODULE_2___default().Select),
-                                children: [
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                        children: "Selecciona pureza"
-                                    }),
-                                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("select", {
-                                        onChange: (e)=>{
-                                            setValorSelect(e.target.value);
-                                        },
-                                        children: [
-                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("option", {
-                                                value: 0,
-                                                children: "---"
-                                            }),
-                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("option", {
-                                                value: precio999,
-                                                children: "999"
-                                            }),
-                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("option", {
-                                                value: precio925,
-                                                children: "925"
-                                            }),
-                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("option", {
-                                                value: precio800,
-                                                children: "800"
-                                            })
-                                        ]
-                                    })
-                                ]
-                            }),
-                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                className: (_conversor_module_css__WEBPACK_IMPORTED_MODULE_2___default().input),
-                                children: [
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                        children: "Introduce gramos"
-                                    }),
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("input", {
-                                        placeholder: "Cantidad",
-                                        pattern: "[0-9]*",
-                                        inputMode: "numeric",
-                                        onChange: (event)=>setValorInput(event.target.value)
-                                    }),
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
-                                        children: "g"
-                                    })
-                                ]
-                            })
-                        ]
-                    }),
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                        className: (_conversor_module_css__WEBPACK_IMPORTED_MODULE_2___default().tituloInferior),
-                        children: "TE DAMOS POR TU PLATA"
-                    }),
-                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", {
-                        className: (_conversor_module_css__WEBPACK_IMPORTED_MODULE_2___default().precioFinal),
-                        children: [
-                            valorInput >= parseFloat(masDePlata * 1000) ? (valorInput / 1000 * valorSelectSuma).toLocaleString() : (valorInput / 1000 * valorSelectNormal).toLocaleString(),
-                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
-                                children: "€"
-                            })
-                        ]
-                    }),
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                        className: (_conversor_module_css__WEBPACK_IMPORTED_MODULE_2___default().promocion),
-                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
-                            className: (_conversor_module_css__WEBPACK_IMPORTED_MODULE_2___default().linea),
-                            children: "Promoci\xf3n Online"
-                        })
-                    })
-                ]
-            }),
-            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("a", {
-                className: (_conversor_module_css__WEBPACK_IMPORTED_MODULE_2___default().botonLlamarTienda),
-                href: `tel:${ciudad?.acf?.telefono}`,
-                children: [
-                    "LLAMA GRATIS AL ",
-                    ciudad?.acf?.telefono
-                ]
-            })
-        ]
-    });
-};
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (CalculadoraOro);
 
 
 /***/ }),
@@ -1664,63 +1323,6 @@ function Layout({ children , menu_list  }) {
 
 /***/ }),
 
-/***/ 6118:
-/***/ ((__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) => {
-
-"use strict";
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6689);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _ConversorPlata_BloquePrecioPlata__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2950);
-
-
-
-
-const SeccionCincoPlata = ({ ciudad  })=>{
-    return /*#__PURE__*/ _jsx("section", {
-        className: styles.contendorSectionDos,
-        children: /*#__PURE__*/ _jsxs("div", {
-            className: styles.contendorBloques,
-            children: [
-                /*#__PURE__*/ _jsxs("div", {
-                    className: styles.bloqueIzq,
-                    children: [
-                        /*#__PURE__*/ _jsx("figure", {
-                            children: /*#__PURE__*/ _jsx("img", {
-                                src: "/logoPlata.png",
-                                alt: "Logo Plata"
-                            })
-                        }),
-                        /*#__PURE__*/ _jsxs("div", {
-                            className: styles.contenedorInfo,
-                            children: [
-                                /*#__PURE__*/ _jsx("h2", {
-                                    children: "Compro plata Madrid"
-                                }),
-                                /*#__PURE__*/ _jsxs("p", {
-                                    children: [
-                                        "Informaci\xf3n sobre el precio de la plata, ",
-                                        /*#__PURE__*/ _jsx("br", {}),
-                                        "siempre actualizado en Madrid."
-                                    ]
-                                })
-                            ]
-                        })
-                    ]
-                }),
-                /*#__PURE__*/ _jsx(BloquePrecioPlata, {
-                    ciudad: ciudad
-                })
-            ]
-        })
-    });
-};
-/* unused harmony default export */ var __WEBPACK_DEFAULT_EXPORT__ = ((/* unused pure expression or super */ null && (SeccionCincoPlata)));
-
-
-/***/ }),
-
 /***/ 7159:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -1766,12 +1368,12 @@ const Section_uno = ()=>{
                             "Compro Plata ",
                             /*#__PURE__*/ jsx_runtime_.jsx("span", {
                                 className: (section_uno_module_default()).linea,
-                                children: "Madrid"
+                                children: "Sevilla"
                             })
                         ]
                     }),
                     /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                        children: "Vender plata en Madrid nunca hab\xeda sido tan f\xe1cil. En Quickgold te garantizamos el mejor servicio de toda la ciudad, con una tasaci\xf3n detallada, a la vista y a un precio justo. Consulta el precio de la plata en Madrid."
+                        children: "Vender plata en Sevilla nunca hab\xeda sido tan f\xe1cil. En Quickgold te garantizamos el mejor servicio de toda la ciudad, con una tasaci\xf3n detallada, a la vista y a un precio justo. Consulta el precio de la plata en Sevilla."
                     }),
                     /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                         className: (section_uno_module_default()).botones,
@@ -1801,14 +1403,14 @@ const Section_uno = ()=>{
             /*#__PURE__*/ jsx_runtime_.jsx("div", {
                 className: (section_uno_module_default()).bloqueDer,
                 children: width <= 610 ? /*#__PURE__*/ jsx_runtime_.jsx("img", {
-                    src: "/plata_mobil.webp",
-                    alt: "Compro plata madrid",
-                    className: (section_uno_module_default()).madridMobil,
+                    src: "/plata-mobil.webp",
+                    alt: "Compro plata Sevilla",
+                    className: (section_uno_module_default()).sevillaMobil,
                     width: 290,
                     height: 220
                 }) : /*#__PURE__*/ jsx_runtime_.jsx("img", {
                     src: "/plata.webp",
-                    alt: "Compro plata madrid",
+                    alt: "Compro plata Sevilla",
                     className: (section_uno_module_default()).vector,
                     width: 480,
                     height: 364
@@ -1822,65 +1424,398 @@ const Section_uno = ()=>{
 
 /***/ }),
 
-/***/ 6898:
+/***/ 6325:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6689);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _section_2_module_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(9586);
-/* harmony import */ var _section_2_module_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_section_2_module_css__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _ConversorPlata_BloquePrecioPlata__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2950);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  "Z": () => (/* binding */ Section_2_SectionDos)
+});
+
+// EXTERNAL MODULE: external "react/jsx-runtime"
+var jsx_runtime_ = __webpack_require__(997);
+// EXTERNAL MODULE: external "react"
+var external_react_ = __webpack_require__(6689);
+// EXTERNAL MODULE: ./src/componentes/Section_2/section_2.module.css
+var section_2_module = __webpack_require__(9586);
+var section_2_module_default = /*#__PURE__*/__webpack_require__.n(section_2_module);
+// EXTERNAL MODULE: ./src/componentes/ConversorPlata/conversor.module.css
+var conversor_module = __webpack_require__(7741);
+var conversor_module_default = /*#__PURE__*/__webpack_require__.n(conversor_module);
+;// CONCATENATED MODULE: ./src/componentes/ConversorPlata/BloquePrecioPlata.js
+
+
+
+const CalculadoraOro = ({ ciudad  })=>{
+    const nombreCiudad = ciudad?.acf?.ciudad_oro;
+    const [data, setData] = (0,external_react_.useState)([]);
+    const [loading, setLoading] = (0,external_react_.useState)(null);
+    (0,external_react_.useEffect)(()=>{
+        fetch(`https://quickgold.es/archivos-cache/Fixing${nombreCiudad}.txt`, {
+            cache: "no-cache"
+        }).then((response)=>response.json()).then((response)=>{
+            setData(response);
+            setLoading(true);
+        });
+    }, []);
+    const [valorInput, setValorInput] = (0,external_react_.useState)("0.00");
+    const [valorSelect, setValorSelect] = (0,external_react_.useState)("0.00");
+    const [masDe, setMasDe] = (0,external_react_.useState)(true);
+    const precio999 = data?.result?.Tarifas?.Plata[3].Productos[0].Precio.toFixed(2);
+    const precio925 = data?.result?.Tarifas?.Plata[2].Productos[0].Precio.toFixed(2);
+    const precio800 = data?.result?.Tarifas?.Plata[0].Productos[0].Precio.toFixed(2);
+    const masDePlata = ciudad?.acf?.para_mas_de_plata;
+    const PrecioMasPlata = ciudad?.acf?.precio_mas_de_plata;
+    const precio999Suma = (parseFloat(precio999) + parseFloat(PrecioMasPlata)).toFixed(2);
+    const precio925Suma = (parseFloat(precio925) + parseFloat(PrecioMasPlata)).toFixed(2);
+    const precio800Suma = (parseFloat(precio800) + parseFloat(PrecioMasPlata)).toFixed(2);
+    const valorSelectSuma = (parseFloat(valorSelect) + parseFloat(PrecioMasPlata)).toFixed(2);
+    const valorSelectNormal = parseFloat(valorSelect).toFixed(2);
+    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+        className: (conversor_module_default()).contenedorAmbosBloquesOro,
+        children: [
+            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                className: (conversor_module_default()).contenedorBloqueSuperior,
+                children: [
+                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                        className: (conversor_module_default()).botones,
+                        children: [
+                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("button", {
+                                onClick: ()=>{
+                                    setMasDe(true);
+                                },
+                                className: masDe ? `${(conversor_module_default()).button} ${(conversor_module_default()).botonActivo}` : `${(conversor_module_default()).button} `,
+                                children: [
+                                    "M\xe1s de ",
+                                    masDePlata,
+                                    "kg"
+                                ]
+                            }),
+                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("button", {
+                                onClick: ()=>{
+                                    setMasDe(false);
+                                },
+                                className: masDe ? `${(conversor_module_default()).button} ` : `${(conversor_module_default()).button} ${(conversor_module_default()).botonActivo}`,
+                                children: [
+                                    "Menos de ",
+                                    masDePlata,
+                                    "kg"
+                                ]
+                            })
+                        ]
+                    }),
+                    masDe ? /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                        className: (conversor_module_default()).contenedorPrecios,
+                        children: [
+                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                className: (conversor_module_default()).contenedorprecioDestacado,
+                                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                    className: (conversor_module_default()).precioDestacado,
+                                    children: [
+                                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
+                                            className: (conversor_module_default()).masde,
+                                            children: [
+                                                "M\xe1s de ",
+                                                masDePlata,
+                                                "kg"
+                                            ]
+                                        }),
+                                        !loading ? /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                            className: (conversor_module_default()).precio18k,
+                                            children: "Cargando"
+                                        }) : /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
+                                            className: (conversor_module_default()).precio18k,
+                                            children: [
+                                                precio999Suma,
+                                                /*#__PURE__*/ jsx_runtime_.jsx("span", {
+                                                    children: "€/kg"
+                                                })
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                            className: (conversor_module_default()).kilates,
+                                            children: "999"
+                                        })
+                                    ]
+                                })
+                            }),
+                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                className: (conversor_module_default()).contenedorOtrosPrecios,
+                                children: [
+                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                        className: (conversor_module_default()).OtrosPrecios,
+                                        children: [
+                                            !loading ? /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                className: (conversor_module_default()).precio,
+                                                children: "Cargando"
+                                            }) : /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
+                                                className: (conversor_module_default()).precio,
+                                                children: [
+                                                    precio925Suma,
+                                                    " ",
+                                                    /*#__PURE__*/ jsx_runtime_.jsx("span", {
+                                                        children: "€/kg"
+                                                    })
+                                                ]
+                                            }),
+                                            /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                className: (conversor_module_default()).preciok,
+                                                children: "925"
+                                            })
+                                        ]
+                                    }),
+                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                        className: (conversor_module_default()).OtrosPrecios,
+                                        children: [
+                                            !loading ? /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                className: (conversor_module_default()).precio,
+                                                children: "Cargando"
+                                            }) : /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
+                                                className: (conversor_module_default()).precio,
+                                                children: [
+                                                    precio800Suma,
+                                                    " ",
+                                                    /*#__PURE__*/ jsx_runtime_.jsx("span", {
+                                                        children: "€/kg"
+                                                    })
+                                                ]
+                                            }),
+                                            /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                className: (conversor_module_default()).preciok,
+                                                children: "800"
+                                            })
+                                        ]
+                                    })
+                                ]
+                            })
+                        ]
+                    }) : /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                        className: (conversor_module_default()).contenedorPrecios,
+                        children: [
+                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                className: (conversor_module_default()).contenedorprecioDestacado,
+                                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                    className: (conversor_module_default()).precioDestacado,
+                                    children: [
+                                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
+                                            className: (conversor_module_default()).masde,
+                                            children: [
+                                                "Menos de ",
+                                                masDePlata,
+                                                "kg"
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
+                                            className: (conversor_module_default()).precio18k,
+                                            children: [
+                                                precio999,
+                                                /*#__PURE__*/ jsx_runtime_.jsx("span", {
+                                                    children: "€/kg"
+                                                })
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                            className: (conversor_module_default()).kilates,
+                                            children: "999"
+                                        })
+                                    ]
+                                })
+                            }),
+                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                className: (conversor_module_default()).contenedorOtrosPrecios,
+                                children: [
+                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                        className: (conversor_module_default()).OtrosPrecios,
+                                        children: [
+                                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
+                                                className: (conversor_module_default()).precio,
+                                                children: [
+                                                    precio925,
+                                                    " ",
+                                                    /*#__PURE__*/ jsx_runtime_.jsx("span", {
+                                                        children: "€/kg"
+                                                    })
+                                                ]
+                                            }),
+                                            /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                className: (conversor_module_default()).preciok,
+                                                children: "925"
+                                            })
+                                        ]
+                                    }),
+                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                        className: (conversor_module_default()).OtrosPrecios,
+                                        children: [
+                                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
+                                                className: (conversor_module_default()).precio,
+                                                children: [
+                                                    precio800,
+                                                    " ",
+                                                    /*#__PURE__*/ jsx_runtime_.jsx("span", {
+                                                        children: "€/kg"
+                                                    })
+                                                ]
+                                            }),
+                                            /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                className: (conversor_module_default()).preciok,
+                                                children: "800"
+                                            })
+                                        ]
+                                    })
+                                ]
+                            })
+                        ]
+                    })
+                ]
+            }),
+            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                className: (conversor_module_default()).contenedorCalculadora,
+                children: [
+                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("h2", {
+                        children: [
+                            "\xbfCu\xe1nto ",
+                            /*#__PURE__*/ jsx_runtime_.jsx("span", {
+                                children: "te vamos a dar"
+                            }),
+                            " por tus joyas?"
+                        ]
+                    }),
+                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                        className: (conversor_module_default()).contenedorSelect,
+                        children: [
+                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                className: (conversor_module_default()).Select,
+                                children: [
+                                    /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                        children: "Selecciona pureza"
+                                    }),
+                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("select", {
+                                        onChange: (e)=>{
+                                            setValorSelect(e.target.value);
+                                        },
+                                        children: [
+                                            /*#__PURE__*/ jsx_runtime_.jsx("option", {
+                                                value: 0,
+                                                children: "---"
+                                            }),
+                                            /*#__PURE__*/ jsx_runtime_.jsx("option", {
+                                                value: precio999,
+                                                children: "999"
+                                            }),
+                                            /*#__PURE__*/ jsx_runtime_.jsx("option", {
+                                                value: precio925,
+                                                children: "925"
+                                            }),
+                                            /*#__PURE__*/ jsx_runtime_.jsx("option", {
+                                                value: precio800,
+                                                children: "800"
+                                            })
+                                        ]
+                                    })
+                                ]
+                            }),
+                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                className: (conversor_module_default()).input,
+                                children: [
+                                    /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                        children: "Introduce gramos"
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("input", {
+                                        placeholder: "Cantidad",
+                                        pattern: "[0-9]*",
+                                        inputMode: "numeric",
+                                        onChange: (event)=>setValorInput(event.target.value)
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("span", {
+                                        children: "g"
+                                    })
+                                ]
+                            })
+                        ]
+                    }),
+                    /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                        className: (conversor_module_default()).tituloInferior,
+                        children: "TE DAMOS POR TU PLATA"
+                    }),
+                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
+                        className: (conversor_module_default()).precioFinal,
+                        children: [
+                            valorInput >= parseFloat(masDePlata * 1000) ? (valorInput / 1000 * valorSelectSuma).toLocaleString() : (valorInput / 1000 * valorSelectNormal).toLocaleString(),
+                            /*#__PURE__*/ jsx_runtime_.jsx("span", {
+                                children: "€"
+                            })
+                        ]
+                    }),
+                    /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                        className: (conversor_module_default()).promocion,
+                        children: /*#__PURE__*/ jsx_runtime_.jsx("span", {
+                            className: (conversor_module_default()).linea,
+                            children: "Promoci\xf3n Online"
+                        })
+                    })
+                ]
+            }),
+            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("a", {
+                className: (conversor_module_default()).botonLlamarTienda,
+                href: `tel:${ciudad?.acf?.telefono}`,
+                children: [
+                    "LLAMA GRATIS AL ",
+                    ciudad?.acf?.telefono
+                ]
+            })
+        ]
+    });
+};
+/* harmony default export */ const BloquePrecioPlata = (CalculadoraOro);
+
+;// CONCATENATED MODULE: ./src/componentes/Section_2/SectionDos.js
 
 
 
 
 const SectionDos = ({ ciudad  })=>{
-    const [switched, setSwitched] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(null);
-    return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("section", {
-        className: (_section_2_module_css__WEBPACK_IMPORTED_MODULE_3___default().contendorSectionDos),
-        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-            className: (_section_2_module_css__WEBPACK_IMPORTED_MODULE_3___default().contendorBloques),
+    const [switched, setSwitched] = (0,external_react_.useState)(null);
+    return /*#__PURE__*/ jsx_runtime_.jsx("section", {
+        className: (section_2_module_default()).contendorSectionDos,
+        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+            className: (section_2_module_default()).contendorBloques,
             children: [
-                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                    className: (_section_2_module_css__WEBPACK_IMPORTED_MODULE_3___default().bloqueIzq),
+                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                    className: (section_2_module_default()).bloqueIzq,
                     children: [
-                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("figure", {
-                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
+                        /*#__PURE__*/ jsx_runtime_.jsx("figure", {
+                            children: /*#__PURE__*/ jsx_runtime_.jsx("img", {
                                 src: "/logoOro.png",
                                 alt: "Logo Plata"
                             })
                         }),
-                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                            className: (_section_2_module_css__WEBPACK_IMPORTED_MODULE_3___default().contenedorInfo),
+                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                            className: (section_2_module_default()).contenedorInfo,
                             children: [
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h2", {
-                                    children: "Comprar Plata en Madrid"
+                                /*#__PURE__*/ jsx_runtime_.jsx("h2", {
+                                    children: "Comprar Plata en Sevilla"
                                 }),
-                                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", {
+                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
                                     children: [
                                         "Utiliza nuestra calculadora para conocer",
-                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("br", {}),
-                                        " el precio de vender plata en Madrid."
+                                        /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
+                                        " el precio de vender plata en Sevilla."
                                     ]
                                 })
                             ]
                         })
                     ]
                 }),
-                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_ConversorPlata_BloquePrecioPlata__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Z, {
+                /*#__PURE__*/ jsx_runtime_.jsx(BloquePrecioPlata, {
                     ciudad: ciudad
                 })
             ]
         })
     });
 };
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (SectionDos);
+/* harmony default export */ const Section_2_SectionDos = (SectionDos);
 
 
 /***/ }),
@@ -1915,7 +1850,7 @@ const SectionTres = ()=>{
                                 "\xbfC\xf3mo puedo vender plata en",
                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
                                     className: (_sectionTres_module_css__WEBPACK_IMPORTED_MODULE_2___default().linea),
-                                    children: " Madrid?"
+                                    children: " Sevilla?"
                                 })
                             ]
                         }),
@@ -1923,7 +1858,7 @@ const SectionTres = ()=>{
                             children: [
                                 /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("span", {
                                     children: [
-                                        "Ven a nuestra tienda compro plata en Madrid y trae tus piezas de plata que ya no quieres, o no utilizas. Nuestro equipo tasar\xe1 tus joyas delante de ti, y te indicar\xe1 el precio de la plata en Madrid en ese momento.",
+                                        "Ven a nuestra tienda compro plata en sevilla y trae tus piezas de plata que ya no quieres, o no utilizas. Nuestro equipo tasar\xe1 tus joyas delante de ti, y te indicar\xe1 el precio de la plata en sevilla en ese momento.",
                                         " "
                                     ]
                                 }),
@@ -1936,7 +1871,7 @@ const SectionTres = ()=>{
                     className: (_sectionTres_module_css__WEBPACK_IMPORTED_MODULE_2___default().bloqueDer),
                     children: [
                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h2", {
-                            children: "\xbfCu\xe1l es el precio de la plata en Madrid?"
+                            children: "\xbfCu\xe1l es el precio de la plata en Sevilla?"
                         }),
                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
                             children: "Tanto en nuestra calculadora de precios online como en nuestra tienda compro plata puedes ver el precio de la plata siempre actualizado. Ll\xe1manos sin compromiso para consultar el precio que puedes conseguir por tus piezas de plata o si tienes cualquier duda del procedimiento."
@@ -1982,12 +1917,12 @@ const SectionCuatro = ()=>{
                             " ",
                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
                                 className: (_sectionCuatro_module_css__WEBPACK_IMPORTED_MODULE_2___default().linea),
-                                children: "Madrid?"
+                                children: "Sevilla?"
                             })
                         ]
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                        children: "En Quickgold Madrid compramos todo tipo de piezas de plata. Ya sean joyas, monedas, elementos de decoraci\xf3n, cuberter\xedas o lingotes. Ven a nuestra tienda y obt\xe9n dinero en efectivo al instante por ellas. Garantizamos el mejor precio de la plata en Madrid siempre con una tasaci\xf3n a la vista y una comprobaci\xf3n espec\xedfica para este metal. Ll\xe1manos sin compromiso y fija tu precio. Mejor servicio y precio por kilo garantizado."
+                        children: "En Quickgold Sevilla compramos todo tipo de piezas de plata. Ya sean joyas, monedas, elementos de decoraci\xf3n, cuberter\xedas o lingotes. Ven a nuestra tienda y obt\xe9n dinero en efectivo al instante por ellas. Garantizamos el mejor precio de la plata en Sevilla siempre con una tasaci\xf3n a la vista y una comprobaci\xf3n espec\xedfica para este metal. Ll\xe1manos sin compromiso y fija tu precio. Mejor servicio y precio por kilo garantizado."
                     })
                 ]
             }),
@@ -1995,8 +1930,8 @@ const SectionCuatro = ()=>{
                 className: (_sectionCuatro_module_css__WEBPACK_IMPORTED_MODULE_2___default().bloqueDer),
                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
                     loading: "lazy",
-                    src: "/casa-cambio-madrid.webp",
-                    alt: "Compro plata madrid",
+                    src: "/casa-cambio-sevilla.webp",
+                    alt: "Compro plata Sevilla",
                     className: (_sectionCuatro_module_css__WEBPACK_IMPORTED_MODULE_2___default().Image),
                     width: 480,
                     height: 390
@@ -2026,16 +1961,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var next_dynamic__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(5152);
 /* harmony import */ var next_dynamic__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_dynamic__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _styles_Home_module_css__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(8874);
-/* harmony import */ var _styles_Home_module_css__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_styles_Home_module_css__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _styles_Home_module_css__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(8874);
+/* harmony import */ var _styles_Home_module_css__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_styles_Home_module_css__WEBPACK_IMPORTED_MODULE_10__);
 /* harmony import */ var _componentes_Breadcrumbs_Breadcrumbs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(8271);
 /* harmony import */ var _componentes_Section_1_Section_uno__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(7159);
-/* harmony import */ var _componentes_Section_2_SectionDos__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(6898);
+/* harmony import */ var _componentes_Section_2_SectionDos__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(6325);
 /* harmony import */ var _componentes_Section_3_SectionTres__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(311);
 /* harmony import */ var _componentes_Section_4_SectionCuatro__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(3120);
 /* harmony import */ var _componentes_Layout_Layout__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(3215);
 /* harmony import */ var react_intersection_observer__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(4009);
-/* harmony import */ var _componentes_SeccionCincoPlata_SeccionCincoPlata_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(6118);
 var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([react_intersection_observer__WEBPACK_IMPORTED_MODULE_9__]);
 react_intersection_observer__WEBPACK_IMPORTED_MODULE_9__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];
 
@@ -2049,7 +1983,6 @@ react_intersection_observer__WEBPACK_IMPORTED_MODULE_9__ = (__webpack_async_depe
 
 
 //import Mapa from "@/componentes/Mapa/Mapa";
-
 
 
 const DynamicMapa = next_dynamic__WEBPACK_IMPORTED_MODULE_2___default()(()=>__webpack_require__.e(/* import() */ 442).then(__webpack_require__.bind(__webpack_require__, 9442)), {
@@ -2066,11 +1999,11 @@ function Home({ markers , menu_list , ciudad  }) {
             /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)((next_head__WEBPACK_IMPORTED_MODULE_1___default()), {
                 children: [
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("title", {
-                        children: "Compro Plata Madrid | Vender Plata Madrid"
+                        children: "Compro Plata Sevilla | Vender Plata Sevilla"
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meta", {
                         name: "description",
-                        content: "Vende tus piezas de plata y oro en nuestro compro plata en Madrid. Tasaci\xf3n a la vista y precios siempre actualizados."
+                        content: "Vende tus piezas de plata y oro en nuestro compro plata en Sevilla. Tasaci\xf3n a la vista y precios siempre actualizados."
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meta", {
                         name: "viewport",
@@ -2085,7 +2018,7 @@ function Home({ markers , menu_list , ciudad  }) {
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_componentes_Layout_Layout__WEBPACK_IMPORTED_MODULE_8__/* ["default"] */ .Z, {
                 menu_list: menu_list,
                 children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                    className: (_styles_Home_module_css__WEBPACK_IMPORTED_MODULE_11___default().main),
+                    className: (_styles_Home_module_css__WEBPACK_IMPORTED_MODULE_10___default().main),
                     children: [
                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_componentes_Breadcrumbs_Breadcrumbs__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Z, {}),
                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_componentes_Section_1_Section_uno__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Z, {}),
@@ -2096,7 +2029,7 @@ function Home({ markers , menu_list , ciudad  }) {
                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_componentes_Section_4_SectionCuatro__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .Z, {}),
                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                             id: "contenedorMapa",
-                            className: (_styles_Home_module_css__WEBPACK_IMPORTED_MODULE_11___default().contenedorMapaVisible),
+                            className: (_styles_Home_module_css__WEBPACK_IMPORTED_MODULE_10___default().contenedorMapaVisible),
                             ref: myRef,
                             children: inView ? /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(DynamicMapa, {
                                 markers: markers
@@ -2108,7 +2041,7 @@ function Home({ markers , menu_list , ciudad  }) {
         ]
     });
 }
-const idTienda = "madrid";
+const idTienda = "sevilla";
 const idPaginaWp = "468";
 //const idWp = "13848";
 async function getStaticProps() {

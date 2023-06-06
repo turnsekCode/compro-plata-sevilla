@@ -8,13 +8,13 @@ const SectionCuatro = () => {
       <div className={styles.bloqueIzq}>
         <h2>
           ¿Cuánto dinero me dais por vender plata en{" "}
-          <span className={styles.linea}>Madrid?</span>
+          <span className={styles.linea}>Sevilla?</span>
         </h2>
         <p>
-          En Quickgold Madrid compramos todo tipo de piezas de plata. Ya sean
+          En Quickgold Sevilla compramos todo tipo de piezas de plata. Ya sean
           joyas, monedas, elementos de decoración, cuberterías o lingotes. Ven a
           nuestra tienda y obtén dinero en efectivo al instante por ellas.
-          Garantizamos el mejor precio de la plata en Madrid siempre con una
+          Garantizamos el mejor precio de la plata en Sevilla siempre con una
           tasación a la vista y una comprobación específica para este metal.
           Llámanos sin compromiso y fija tu precio. Mejor servicio y precio por
           kilo garantizado.
@@ -23,8 +23,8 @@ const SectionCuatro = () => {
       <div className={styles.bloqueDer}>
         <img
           loading="lazy"
-          src="/casa-cambio-madrid.webp"
-          alt="Compro plata madrid"
+          src="/casa-cambio-sevilla.webp"
+          alt="Compro plata Sevilla"
           className={styles.Image}
           width={480}
           height={390}

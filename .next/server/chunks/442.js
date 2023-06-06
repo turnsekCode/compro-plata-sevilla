@@ -126,10 +126,11 @@ __webpack_require__.r(__webpack_exports__);
                         children: [
                             /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("h2", {
                                 children: [
-                                    "Tiendas compro plata en ",
+                                    "Tiendas compro plata en",
+                                    " ",
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
                                         className: (_mapa_module_css__WEBPACK_IMPORTED_MODULE_4___default().linea),
-                                        children: "Madrid"
+                                        children: "Sevilla"
                                     })
                                 ]
                             }),

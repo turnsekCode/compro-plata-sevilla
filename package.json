@@ -1,8 +1,8 @@
 {
-  "name": "compro-oro-madrid",
+  "name": "compro-oro-sevilla",
   "version": "0.1.0",
   "private": true,
-  "home": "quickgold.es/compro-oro-madrid",
+  "home": "quickgold.es/compro-oro-sevilla",
   "scripts": {
     "dev": "node server.js",
     "build": "next build",

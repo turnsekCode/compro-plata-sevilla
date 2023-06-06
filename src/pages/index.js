@@ -10,7 +10,6 @@ import SectionCuatro from "@/componentes/Section_4/SectionCuatro";
 //import Mapa from "@/componentes/Mapa/Mapa";
 import Layout from "@/componentes/Layout/Layout";
 import { useInView } from "react-intersection-observer";
-import SeccionCincoPlata from "@/componentes/SeccionCincoPlata/SeccionCincoPlata.js";
 
 const DynamicMapa = dynamic(() =>
   import(/*componente del mapa script*/ "../componentes/Mapa/Mapa.js")
@@ -21,10 +20,10 @@ export default function Home({ markers, menu_list, ciudad }) {
   return (
     <>
       <Head>
-        <title>Compro Plata Madrid | Vender Plata Madrid</title>
+        <title>Compro Plata Sevilla | Vender Plata Sevilla</title>
         <meta
           name="description"
-          content="Vende tus piezas de plata y oro en nuestro compro plata en Madrid. Tasación a la
+          content="Vende tus piezas de plata y oro en nuestro compro plata en Sevilla. Tasación a la
 vista y precios siempre actualizados."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -50,7 +49,7 @@ vista y precios siempre actualizados."
     </>
   );
 }
-const idTienda = "madrid";
+const idTienda = "sevilla";
 const idPaginaWp = "468";
 //const idWp = "13848";
 export async function getStaticProps() {
