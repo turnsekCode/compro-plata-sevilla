@@ -1749,9 +1749,7 @@ const CalculadoraOro = ({ ciudad  })=>{
                                 style: "currency",
                                 currency: "EUR"
                             }),
-                            /*#__PURE__*/ jsx_runtime_.jsx("span", {
-                                children: "€"
-                            })
+                            /*#__PURE__*/ jsx_runtime_.jsx("span", {})
                         ]
                     }),
                     /*#__PURE__*/ jsx_runtime_.jsx("p", {

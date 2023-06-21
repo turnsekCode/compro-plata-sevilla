@@ -176,7 +176,7 @@ const CalculadoraOro = ({ ciudad }) => {
                 style: "currency",
                 currency: "EUR",
               })}
-          <span>€</span>
+          <span></span>
         </p>
         <p className={styles.promocion}>
           <span className={styles.linea}>Promoción Online</span>
