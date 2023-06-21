@@ -1742,7 +1742,13 @@ const CalculadoraOro = ({ ciudad  })=>{
                     /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
                         className: (conversor_module_default()).precioFinal,
                         children: [
-                            valorInput >= parseFloat(masDePlata * 1000) ? (valorInput / 1000 * valorSelectSuma).toLocaleString() : (valorInput / 1000 * valorSelectNormal).toLocaleString(),
+                            valorInput >= parseFloat(masDePlata * 1000) ? (valorInput / 1000 * valorSelectSuma).toLocaleString("es", {
+                                style: "currency",
+                                currency: "EUR"
+                            }) : (valorInput / 1000 * valorSelectNormal).toLocaleString("es", {
+                                style: "currency",
+                                currency: "EUR"
+                            }),
                             /*#__PURE__*/ jsx_runtime_.jsx("span", {
                                 children: "€"
                             })
